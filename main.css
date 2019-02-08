@@ -1,0 +1,98 @@
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'UnifrakturMaguntia', cursive;
+    text-align: center;
+    font-size: 45px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.searchbar {
+    margin: 20px 0 50px 0;
+}
+
+#search {
+    font-size: 1.2em;
+    display: block;
+    height: 45px;
+    border-radius: 4px;
+    width: 80%;
+    margin: auto;
+    border: 2px lightgrey solid;
+    text-align: center;
+}
+
+#search:focus {
+    border-color: grey;
+    outline: none;
+}
+
+main {
+    margin 20px;
+    display: block;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.photobox {
+    width: calc(50% - 20px);
+    padding: 10px;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+}
+
+/* Tablets ----------- */
+@media (min-width : 767px) {
+
+    h1 {
+        font-size: 95px;
+    }
+
+    #search {
+        width: 75%;
+    }
+
+    main {
+        width: 80%;
+        margin: auto;
+    }
+
+    .photobox {
+        width: calc(33% - 20px);
+    }
+
+}
+
+/* Desktop ----------- */
+@media (min-width : 1024px) {
+
+    h1 {
+        font-size: 120px;
+    }
+
+    #search {
+        width: 50%;
+    }
+
+    main {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .photobox {
+        width: calc(25% - 20px);
+    }
+
+
+}
