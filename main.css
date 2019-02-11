@@ -32,11 +32,11 @@ h1 {
 }
 
 main {
-    margin 20px;
+    margin: 20px;
     display: block;
 }
 
-.gallery {
+#gallery {
     display: flex;
     flex-wrap: wrap;
     padding: 0 10px;
@@ -50,6 +50,36 @@ main {
 .photo {
     width: 100%;
     height: auto;
+}
+
+.lg-toolbar {
+    background: none;
+}
+
+.lg-sub-html {
+    background: none;
+    font-family: 'Cutive Mono', monospace;
+    font-weight: 100;
+    padding-bottom: 50px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.lg-outer .lg-img-wrap {
+    position: absolute;
+    padding: 130px 5px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.lg-backdrop {
+    background-color: #3c3c3cf7;
+}
+
+.lg-actions .lg-next, .lg-actions .lg-prev {
+    background: none;
 }
 
 /* Tablets ----------- */
